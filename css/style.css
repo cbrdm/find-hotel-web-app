@@ -27,6 +27,10 @@ button {
 	background-color: transparent;
 }
 
+input {
+	padding-left: 0.1rem;
+}
+
 /* General */
 
 :root {
