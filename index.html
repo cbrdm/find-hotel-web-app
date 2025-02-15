@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Find Hotel</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a class="logo" href="#">Your<span>.logo</span></a>
+
+				<nav class="header__nav">
+					<ul class="header__menu">
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">Last Minute Deals</a>
+						</li>
+
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">Blog</a>
+						</li>
+
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">About us</a>
+						</li>
+
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#">Contacts</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="header__choose">
+					<form action="#" method="get">
+						<ul class="header__choose-list">
+							<li class="header__choose-item">
+								<select class="header__choose-select" name="#" id="#">
+									<option value="usd">$</option>
+									<option value="eur">€</option>
+								</select>
+							</li>
+
+							<li class="header__choose-item">
+								<select class="header__choose-select" name="#" id="#">
+									<option value="en">EN</option>
+									<option value="ru">RU</option>
+								</select>
+							</li>
+						</ul>
+					</form>
+
+					<button class="header__choose-profile">
+						<img src="img/icons/profile.png" alt="choose profile">
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="welcome">
+			<div class="welcome__background">
+				<div class="welcome__text">
+					<h1 class="welcome__title">Find an apartment<br>for your vacation</h1>
+
+					<p class="welcome__desc">We have several thousand apartments for every taste in every corner of the globe</p>
+				</div>
+
+				<div class="welcome__search">
+					<form action="#" method="get">
+						<div class="welcome__search-wrapper">
+							<div class="welcome__search-where">
+								<label class="welcome__search-label" for="destination">Where</label>
+								<br>
+								<input class="welcome__search-input" type="text" name="destination" id="destination" placeholder="Search Destination">
+							</div>
+
+							<div class="welcome__divider"></div>
+
+							<div class="welcome__search-when">
+								<div>
+									<label class="welcome__search-label" for="date">When</label>
+									<br>
+									<input class="welcome__search-input" type="text" name="date" id="date" placeholder="Select Date">
+								</div>
+
+								<button class="welcome__search-btn" type="submit">
+									<img src="img/icons/search.svg" alt="search button">
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>
