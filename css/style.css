@@ -54,14 +54,10 @@ body {
 	padding: 0 16px;
 }
 
-.logo {
-	font-weight: 700;
-	font-size: 32px;
-	color: var(--color-accent);
-}
-
-.logo span {
-	color: var(--color-interaction);
+.logo__img {
+	display: block;
+	width: 159px;
+	height: 39px;
 }
 
 /* Header */
@@ -79,6 +75,20 @@ body {
 .header__menu {
 	display: flex;
 	column-gap: 40px;
+}
+
+.header__menu-btn {
+	display: none;
+	width: 32px;
+	height: 22px;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.header__menu-btn span {
+	background-color: #333;
+	height: 3px;
+	width: 100%;
 }
 
 .header__menu-link {
@@ -125,6 +135,7 @@ body {
 }
 
 .welcome__background {
+	position: relative;
 	background: url('../img/background/main-bg.png') center center / cover no-repeat;
 	max-width: 1170px;
 	height: 500px;
@@ -156,43 +167,22 @@ body {
 	border-radius: 36px;
 	border: 1px solid #d6d6d6;
 	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.16);
-	margin: 0 auto;
-	position: relative;
-	top: 197px;
-}
-
-.welcome__search-wrapper {
 	padding: 14px 15px 13px 57px;
+
+	position: absolute;
+	bottom: -35px;
+	left: 50%;
+	transform: translateX(-50%);
+
 	display: flex;
-	align-items: center;
 }
 
 .welcome__divider {
 	width: 2px;
 	height: 40px;
 	background-color: #ebebeb;
-}
-
-.welcome__search-where {
-	margin-right: 79px;
-}
-
-.welcome__search-when {
-	margin-left: auto;
-	display: flex;
-	align-items: center;
-}
-
-.welcome__search-where .welcome__search-input {
-	width: 153px;
-}
-
-.welcome__search-when .welcome__search-input {
-	width: 92px;
-}
-
-.welcome__search-btn {
-	margin-left: 82px;
+	margin-left: 78px;
+	margin-right: 52px;
 }
 
 .welcome__search-where,
@@ -224,15 +214,91 @@ body {
 }
 
 .welcome__search-input {
+	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
-	color: var(--color-text);
 }
 
-.welcome__search-input::placeholder {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.5;
-	color: #a3a3a3;
+.welcome__search-where .welcome__search-input {
+	width: 154px;
+}
+
+.welcome__search-when .welcome__search-input {
+	width: 94px;
+}
+
+.welcome__search-btn {
+	margin-left: auto;
+}
+
+/* Media */
+
+@media (max-width: 848px) {
+	.header__choose form {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.header__wrapper {
+		column-gap: 16px;
+	}
+
+	.header__menu-btn {
+		display: flex;
+	}
+
+	.header__nav {
+		display: none;
+	}
+
+	.welcome__text {
+		padding-top: 40px;
+		padding-left: 40px;
+	}
+
+	.welcome__title {
+		font-size: 36px;
+	}
+
+	.welcome__desc {
+		font-size: 18px;
+		max-width: 260px;
+	}
+}
+
+@media (max-width: 576px) {
+	.welcome__search {
+		width: 328px;
+	}
+
+	.welcome__divider,
+	.welcome__search-when {
+		display: none;
+	}
+}
+
+@media (max-width: 425px) {
+	.welcome__background {
+		height: 334px;
+	}
+
+	.welcome__text {
+		padding: 32px 16px 0;
+	}
+
+	.welcome__title {
+		font-size: 32px;
+		margin-bottom: 16px;
+	}
+
+	.welcome__desc {
+		font-size: 16px;
+		max-width: 232px;
+	}
+
+	.welcome__search {
+		bottom: 32px;
+	}
 }

@@ -12,7 +12,15 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__wrapper">
-				<a class="logo" href="#">Your<span>.logo</span></a>
+				<button class="header__menu-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+
+				<a class="logo" href="#">
+					<img class="logo__img" src="img/icons/logo.svg" alt="logo">
+				</a>
 
 				<nav class="header__nav">
 					<ul class="header__menu">
@@ -70,31 +78,25 @@
 					<p class="welcome__desc">We have several thousand apartments for every taste in every corner of the globe</p>
 				</div>
 
-				<div class="welcome__search">
-					<form action="#" method="get">
-						<div class="welcome__search-wrapper">
-							<div class="welcome__search-where">
-								<label class="welcome__search-label" for="destination">Where</label>
-								<br>
-								<input class="welcome__search-input" type="text" name="destination" id="destination" placeholder="Search Destination">
-							</div>
+				<form class="welcome__search" action="#" method="get">
+					<div class="welcome__search-where">
+						<label class="welcome__search-label" for="destination">Where</label>
+						<br>
+						<input class="welcome__search-input" type="text" name="destination" id="destination" placeholder="Search Destination">
+					</div>
 
-							<div class="welcome__divider"></div>
+					<div class="welcome__divider"></div>
 
-							<div class="welcome__search-when">
-								<div>
-									<label class="welcome__search-label" for="date">When</label>
-									<br>
-									<input class="welcome__search-input" type="text" name="date" id="date" placeholder="Select Date">
-								</div>
+					<div class="welcome__search-when">
+						<label class="welcome__search-label" for="date">When</label>
+						<br>
+						<input class="welcome__search-input" type="text" name="date" id="date" placeholder="Select Date">
+					</div>
 
-								<button class="welcome__search-btn" type="submit">
-									<img src="img/icons/search.svg" alt="search button">
-								</button>
-							</div>
-						</div>
-					</form>
-				</div>
+					<button class="welcome__search-btn" type="submit">
+						<img src="img/icons/search.svg" alt="search button">
+					</button>
+				</form>
 			</div>
 		</section>
 	</main>
