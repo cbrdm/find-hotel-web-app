@@ -150,6 +150,7 @@ body {
 	position: relative;
 	background: url('../img/background/main-bg.png') center center / cover no-repeat;
 	height: 500px;
+	border-radius: 20px;
 }
 
 .welcome__text {
@@ -741,6 +742,12 @@ body {
 
 	.posts__list {
 		justify-content: space-around;
+	}
+}
+
+@media (max-width: 1202px) {
+	.welcome__background {
+		border-radius: unset;
 	}
 }
 
