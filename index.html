@@ -72,32 +72,34 @@
 
 	<main class="main">
 		<section class="welcome">
-			<div class="welcome__background">
-				<div class="welcome__text">
-					<h1 class="welcome__title">Find an apartment<br>for your vacation</h1>
+			<div class="container">
+				<div class="welcome__background">
+					<div class="welcome__text">
+						<h1 class="welcome__title">Find an apartment<br>for your vacation</h1>
 
-					<p class="welcome__desc">We have several thousand apartments for every taste in every corner of the globe</p>
+						<p class="welcome__desc">We have several thousand apartments for every taste in every corner of the globe</p>
+					</div>
+
+					<form class="welcome__search" action="#" method="get">
+						<div class="welcome__search-where">
+							<label class="welcome__search-label" for="destination">Where</label>
+							<br>
+							<input class="welcome__search-input" type="text" name="destination" id="destination" placeholder="Search Destination">
+						</div>
+
+						<div class="welcome__divider"></div>
+
+						<div class="welcome__search-when">
+							<label class="welcome__search-label" for="date">When</label>
+							<br>
+							<input class="welcome__search-input" type="text" name="date" id="date" placeholder="Select Date">
+						</div>
+
+						<button class="welcome__search-btn" type="submit">
+							<img src="img/icons/search.svg" alt="search button">
+						</button>
+					</form>
 				</div>
-
-				<form class="welcome__search" action="#" method="get">
-					<div class="welcome__search-where">
-						<label class="welcome__search-label" for="destination">Where</label>
-						<br>
-						<input class="welcome__search-input" type="text" name="destination" id="destination" placeholder="Search Destination">
-					</div>
-
-					<div class="welcome__divider"></div>
-
-					<div class="welcome__search-when">
-						<label class="welcome__search-label" for="date">When</label>
-						<br>
-						<input class="welcome__search-input" type="text" name="date" id="date" placeholder="Select Date">
-					</div>
-
-					<button class="welcome__search-btn" type="submit">
-						<img src="img/icons/search.svg" alt="search button">
-					</button>
-				</form>
 			</div>
 		</section>
 

@@ -142,12 +142,14 @@ body {
 	padding-bottom: 135px;
 }
 
+.welcome .container {
+	padding: 0;
+}
+
 .welcome__background {
 	position: relative;
 	background: url('../img/background/main-bg.png') center center / cover no-repeat;
-	max-width: 1170px;
 	height: 500px;
-	margin: 0 auto;
 }
 
 .welcome__text {
